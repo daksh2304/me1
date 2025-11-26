@@ -8,7 +8,8 @@ function Navbar() {
   return (
     <header className="navbar">
       <GlobalStyle />
-      <img src={`${process.env.PUBLIC_URL}/logo.jpg`} alt="logo" />
+    <img src={`${process.env.PUBLIC_URL}/logo.jpg`} alt="logo" />
+
 
       {/* Hamburger Menu Button */}
       <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
