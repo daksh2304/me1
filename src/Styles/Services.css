@@ -1,0 +1,130 @@
+/* ========================= Services.css ========================= */
+
+.services-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #FAEBEF;
+  line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 580vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%) blur(1.5px);   /* ⭐ Background blur */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  z-index: 2;
+  font-weight: 700;
+  text-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+/* ================= Service Sections ================= */
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+.service-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.service-section .text {
+  flex: 1;
+  min-width: 300px;
+}
+.text h1 {
+  color: #333D79;
+}
+
+/* ================= Cards ================= */
+.center-title {
+  color: #333D79;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #333D79;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .service-section,
+  .service-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero {
+    height: 30vh;
+  }
+  .service-card img {
+    height: 150px;
+  }
+}
